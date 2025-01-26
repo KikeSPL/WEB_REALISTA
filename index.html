@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho Sainz-Pardo</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: url(/images/justiciayrazon.jpg);
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+
+    header #caja-central {
+        text-align: center;
+    }
+
+    header h1 {
+        color: yellow;
+        text-shadow: 3px 3px 5px black;
+        font-size: 3em;
+    }
+
+    header h2 {
+        color: orange;
+        text-shadow: 3px 3px 5px black;
+        font-size: 2em;
+    }
+
+    nav {
+        background-color: blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        color: red;
+        font-style: oblique;
+        font-weight: bold;
+    }
+
+    section#quienes-somos {
+        background-color: lightblue;
+
+    }
+
+    .titulo {
+        text-align: center;
+        color: blue;
+        padding: 20px;
+    }
+
+    section #contenedor-quienes {
+        display: flex;
+
+    }
+
+    #contenedor-quienes #derecha {
+        width: 50%;
+
+    }
+
+    #contenedor-quienes #izquierda {
+        width: 50%;
+        text-align: center;
+    }
+
+    #contenedor-quienes #izquierda img {
+        width: 50%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    section#opiniones {
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+
+    #contenedor-opiniones {
+        display: flex;
+        justify-content: space-around;
+        /* Distribuye las reseñas horizontalmente */
+        align-items: center;
+        /* Alinea las reseñas verticalmente */
+    }
+
+    #contenedor-opiniones .opinion {
+        display: flex;
+        flex-direction: column;
+        /* Asegura que las imágenes y textos estén uno debajo del otro */
+        align-items: center;
+        /* Centra los elementos dentro de cada reseña */
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contenedor-opiniones img {
+        height: 150px;
+        border-radius: 100%;
+        margin-bottom: 10px;
+    }
+
+    #contenedor-opiniones p {
+        margin: 0;
+        text-align: center;
+    }
+
+    footer {
+        background-color: grey;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    footer .caja-inferior {
+        width: 33%;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="caja-central">
+            <h1>DESPACHO SAINZ-PARDO</h1>
+            <h2>La Justicia a tu alcance</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section id="quienes-somos">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-quienes">
+            <div id="izquierda">
+                <img src="images/quienes.jpg" alt="">
+            </div>
+            <div id="derecha">
+                <h1>Asesoramiento legal y representación en procesos judiciales</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut amet, soluta magnam voluptas beatae
+                    earum voluptates unde debitis perspiciatis sit impedit corrupti nam aliquam modi natus ad repellat
+                    iusto nostrum!
+                    A odio aliquid recusandae neque impedit harum commodi quam illum rerum quod quisquam pariatur, ullam
+                    voluptate eos. Enim est deserunt, cumque explicabo exercitationem porro minus omnis temporibus
+                    minima quam odio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="opiniones">
+        <h1 class="titulo">Opiniones de nuestros clientes</h1>
+        <div id="contenedor-opiniones">
+            <div id="izquierda">
+                <img src="images/opinion1.jpg" alt="">
+                <p>"Muy contenta"</p>
+            </div>
+
+            <div id="centro">
+                <img src="images/opinion1.jpg" alt="">
+                <p>"Grandes profesionales"</p>
+            </div>
+
+            <div id="derecha">
+                <img src="images/opinion1.jpg" alt="">
+                <p>"Mi divorcio salió mal"</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en</h2>
+            <p>C/ Solidaridad 6</p>
+            <p>13600 Alcázar de San Juan</p>
+        </div>
+        <div class="caja-inferior">
+            <h2>Email</h2>
+            <p>despacho@sainzpardo.es</p>
+        </div>
+    </footer>
+</body>
+
+</html>
